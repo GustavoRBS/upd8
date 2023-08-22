@@ -42,7 +42,6 @@
             <a class="navbar-brand" href="{{ url('/') }}">
                 <img alt="Viasat" title="Viasat" src="{{secure_asset('assets/img/logo-viasat-yellow.png')}}">
             </a>
-            <label>V 2.0.0</label>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
