@@ -1,0 +1,41 @@
+.modal-header .icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    z-index: 9;
+    text-align: center;
+    border: 3px solid #f15e5e;
+}
+
+.modal-header .icon-box i {
+    color: #f15e5e;
+    font-size: 46px;
+    display: inline-block;
+    margin-top: 13px;
+}
+.modal-header h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -10px;
+}
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.modal-body,
+.modal-header{
+    color:#202E39;
+}

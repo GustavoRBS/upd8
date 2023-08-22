@@ -1,0 +1,185 @@
+/* Estilos personalizados para a top bar */
+.top-bar {
+    background-color: #cedae3;
+    color: black;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar .btn-toggle {
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    width: 22px;
+    height: 16px;
+    margin: 5px;
+    padding-right: 25px;
+}
+
+/* Estilos personalizados para as sidebars */
+.sidebar-mini {
+    width: 80px;
+    /* Largura da sidebar mini */
+    background-color: #151E25;
+    /* Cor de fundo da sidebar mini */
+    color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -80px;
+    /* Posição inicial oculta */
+    z-index: 101;
+    padding: 60px 0 20px 0;
+    /* Ajuste conforme necessário */
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    box-shadow: 4px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-mini a {
+    color: #52585E;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: black;
+}
+
+.sidebar-mini span {
+    margin-left: 0px !important;
+    display: block;
+}
+
+.sidebar-full {
+    width: 250px;
+    /* Largura da sidebar completa */
+    background-color: rgba(8, 18, 26, 0.38);
+    /* Cor de fundo da sidebar completa */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    /* Largura da sidebar mini */
+    right: -300px;
+    z-index: 100;
+    padding: 60px 20px;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar-mini .nav-link {
+    text-align: center;
+    font-size: 10px !important;
+    line-height: 12px;
+}
+
+.sidebar-mini .nav-link-text {
+    display: none;
+    /* Esconde o texto do link na sidebar mini */
+}
+
+.sidebar-full .sidebar-heading {
+    font-size: 1rem;
+    /* Tamanho da fonte para o cabeçalho da sidebar completa */
+    font-weight: 600;
+    padding: 10px 15px;
+    color: #373d45;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+div.sidebar-full>ul>li {
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.sidebar-full .nav-link {
+    color: #2e3235;
+}
+
+.sidebar-full .nav-link.active,
+.sidebar-mini .nav-link.active {
+    color: black;
+}
+
+.show-sidebar-mini {
+    left: 0;
+}
+
+/* .show-sidebar-full {
+left: 80px;
+right: 0;
+}*/
+
+.main-content {
+    /* margin-left: 80px; */
+    /* Largura da sidebar mini */
+    transition: all 0.3s ease;
+    margin-top: 60px;
+}
+
+.show-sidebar-full {
+    margin-left: 380px;
+    /* Largura da sidebar completa + Largura da sidebar mini + Espaço entre elas */
+}
+
+.shifted {
+    margin-left: 80px;
+    /* Ajuste conforme necessário */
+}
+
+.shifted-full {
+    margin-left: 330px;
+    /* Ajuste conforme necessário */
+}
+
+@media (max-width: 768px) {
+    .shifted {
+        margin-left: 0px;
+    }
+    .sidebar-full {
+        background-color: #425360;
+    }
+    .show-sidebar-full {
+        margin-left: 350px;
+    }
+    .sidebar-mini {
+        width: 55px;
+    }
+    .main-content {
+        margin-left: 0px;
+    }
+    .top-bar .btn-toggle {
+        margin: 0px;
+    }
+}
+
+.material-icons-outlined {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.top-bar img {
+    width: 76px;
+    height: 25px;
+}
+
+.top-bar label {
+    padding: 10px 15px;
+    color: black;
+}

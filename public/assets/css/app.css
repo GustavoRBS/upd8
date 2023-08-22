@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    /* font-family: var(--bs-body-font-family); */
+    /* font-size: var(--bs-body-font-size); */
+    /* font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height); */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: black;
+    text-align: var(--bs-body-text-align);
+    background-color: #657A8A;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: #202E39;
+}
+
+label {
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.btn,
+.btn-toggle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.form-control,
+.form-select {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.row a:not(.btn),
+.row label,
+.row p,
+.row h5 {
+    color: #657A8A;
+}
+
+.height-100-vh {
+    height: 100vh;
+}
+
+.height-full-vh {
+    height: calc(97vh - 56px);
+}
+
+.row-header-page {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+}
+
+.row-header-page h2 {
+    font-size: 16px;
+    color: #CEDC00;
+    font-weight: 600;
+    margin: 0;
+}
+
+.row-header-page .opcoes-header-page ul:not(.dropdown ul) {
+    margin: 0 0 0 0;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.row-header-page .opcoes-header-page ul li {
+    color: #202E39;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-header-page .opcoes-header-page ul li.option-filter,
+.row-header-page .opcoes-header-page ul li a:not(.dropdown a) {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.row-header-page .opcoes-header-page ul li span {
+    margin-left: 8px;
+}
+
+.row-header-page .opcoes-header-page ul li a:not(.dropdown a) {
+    color: #202E39;
+    text-decoration: none;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+}
+
+.row-header-page .opcoes-header-page ul li i svg,
+.row-header-page .opcoes-header-page ul li a i svg {
+    width: 16px;
+    height: 16px;
+}
+
+.row-header-page .opcoes-header-page ul li.option-filter:hover,
+.row-header-page .opcoes-header-page ul li a:hover,
+.row-header-page .opcoes-header-page ul li a:not(.dropdown a):hover {
+    color: #CEDC00;
+}
+
+ul,
+ul li {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.options-submenu {
+    padding: 16px 0px;
+}
+
+.options-submenu li a {
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.options-submenu li a span {
+    margin-left: 8px;
+}
+
+.options-submenu li a i svg {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-submenu li a.active {
+    color: #CEDC00;
+}
+
+.options-submenu li a:hover {
+    color: #CEDC00;
+}
+
+.dropdown-menu {
+    background-color: #151E25;
+    box-shadow: 4px 0px 7px rgb(0 0 0 / 20%);
+}
+
+.dropdown-menu .dropdown-item {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #151E25;
+    color: #CEDC00;
+}
+
+.dropdown-menu .dropdown-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+.text-primary {
+    color: #196f9a !important;
+    font-weight: 600;
+}
+
+.form-label {
+    color: black !important;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: normal;
+}
+
+.btn {
+    border-radius: 5px;
+    --bs-btn-color: #fff !important;
+    --bs-btn-hover-color: #0091FF !important;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+    width: 91px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-green {
+    --bs-btn-bg: #cedc00;
+    --bs-btn-hover-bg: #cedc00;
+}
+
+.btn-orange {
+    --bs-btn-bg: #FA0;
+    --bs-btn-hover-bg: #FA0;
+}
+
+.btn-red {
+    --bs-btn-bg: #b6472e;
+    --bs-btn-hover-bg: #b6472e;
+}
+
+.btn-green-dark {
+    --bs-btn-bg: #31b62e;
+    --bs-btn-hover-bg: #31b62e;
+}
+
+.opcoes-header-page .dropdown .dropdown-menu {
+    left: -15px !important;
+    width: 350px;
+    top: 10px !important;
+    bottom: 0;
+    transform: translate3d(16px, 0, 0);
+    -webkit-transform: translate3d(16px, 0, 0);
+    transition: -webkit-transform 0.26s cubic-bezier(0, 0, 0.2, 1) 0s;
+    background-color: #202E39;
+}
+
+.shape {
+    position: absolute;
+    width: 16.69px;
+    height: 16.69px;
+    background: #202E39;
+    border: 1px solid #202E39;
+    transform: rotate(45deg);
+    top: -8px;
+    left: 15px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.button-action {
+    border-radius: 3px;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.act-svg {
+    background: url(/assets/img/btn-act.svg) no-repeat center;
+    background-size: contain;
+    fill: #626C74;
+    height: 10px;
+    top: 2px;
+    position: relative;
+    width: 10px;
+    left: 2.5px;
+}
+
+.act-div::after {
+    content: none;
+}
+
+.icon-act:before {
+    margin-left: -8px;
+    margin-right: 14px;
+}
+
+.fa-solid,
+.fas {
+    font-family: "Font Awesome 5 Pro";
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Pro";
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url(/assets/webfonts/fa-solid-900.eot);
+    src: url(/assets/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(/assets/webfonts/fa-solid-900.woff2) format("woff2"), url(/assets/webfonts/fa-solid-900.woff) format("woff"), url(/assets/webfonts/fa-solid-900.ttf) format("truetype"), url(/assets/webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+.dropdown-menu-button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-menu-button-new {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown-menu-button-new:hover {
+    color: #ced559;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
